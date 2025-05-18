@@ -46,6 +46,18 @@ const Register = () => {
           className='w-full mb-4 p-2 border rounded' />
         {errors.email && <p className='text-red-500 text-sm'>{errors.email.message}</p>}
 
+        <div className='mb-4'>
+          <label className='block mb-2 text-sm font-medium text-gray-900'>Phone Number</label>
+          <input
+            {...register('phoneNumber')}
+            type='text'
+            placeholder='06XXXXXXXX'
+            className='w-full rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500'
+          />
+          {errors.phoneNumber && <p className='text-red-500 text-sm'>{errors.phoneNumber.message}</p>}
+        </div>
+
+
         <input {...register('password')} type='password' placeholder='Password'
           className='w-full mb-4 p-2 border rounded' />
         {errors.password && <p className='text-red-500 text-sm'>{errors.password.message}</p>}
