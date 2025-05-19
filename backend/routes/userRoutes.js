@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const userCtrl = require("../controllers/usersController"); // Correction du nom (users avec un 's')
 const tokenCtrl = require("../controllers/tokenController");
+const userCtrl = require("../controllers/usersController");
 const authJWT = require("../middlewares/authJWT");
 const isAdmin = require("../middlewares/isAdmin");
 
